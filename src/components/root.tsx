@@ -7,7 +7,7 @@ const SiteRoot = () => {
   const storedUserCredentials = localStorage.getItem("userCredentials");
   const userCredentials = storedUserCredentials
     ? JSON.parse(storedUserCredentials)
-    : null;
+    : [];
 
   useEffect(() => {
     userCredentials?.email === "selinay" &&
