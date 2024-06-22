@@ -23,14 +23,14 @@ export default function Header(props: Props) {
   const navigate = useNavigate();
   const drawerWidth = 240;
   const navItems = [
-    { label: "Ev", action: () => navigate("/") },
+    { label: "Ana Sayfa", action: () => navigate("/") },
     {
       label: "İzin Talepi",
       action: () => navigate("/permissionrequestpage"),
     },
     { label: "Taleplerim", action: () => navigate("/mypermit") },
     {
-      label: "Logout",
+      label: "Çıkış",
       action: () => {
         localStorage.removeItem("userCredentials");
         navigate("/login");
@@ -47,7 +47,7 @@ export default function Header(props: Props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        MUI
+        AKANA
       </Typography>
       <Divider />
       <List>
